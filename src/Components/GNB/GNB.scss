@@ -1,0 +1,34 @@
+.gnb {
+  position: relative;
+  padding: 200px 50px;
+
+  background: red;
+
+  .menu-list {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    ul {
+      float: right;
+      margin: 0;
+      padding: 0;
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      li {
+        display: inline;
+        list-style: none;
+      }
+    }
+  }
+
+
+  .title {
+    margin: 0;
+  }
+
+}

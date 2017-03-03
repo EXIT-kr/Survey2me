@@ -5,3 +5,5 @@
 
 /* Default Page */
 export DefaultPage from './DefaultPage/DefaultPage';
+/* Landing Page */
+export LandingPage from './LandingPage/LandingPage';
