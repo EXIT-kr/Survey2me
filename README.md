@@ -1,4 +1,4 @@
-# React ES6 Sass Boilerplate
+# Survey2me React Client Repository
 This repository will help you to make New React Project with ES6 and Sass 
 
 ## Application
@@ -12,12 +12,4 @@ This repository will help you to make New React Project with ES6 and Sass
 4. Sass
 
 ## Using Library
-1. [Material UI] (http://www.material-ui.com/)
-
-
-## Installation
-```sh
-$ git clone https://github.com/nayunhwan/React-ES6-Sass-Boilerplate app-name
-$ cd app-name
-$ npm install
-```
+1. [React-Bootstrap] (https://react-bootstrap.github.io/)
