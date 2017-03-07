@@ -12,4 +12,5 @@ This repository will help you to make New React Project with ES6 and Sass
 4. Sass
 
 ## Using Library
-1. [React-Bootstrap] (https://react-bootstrap.github.io/)
+1. [Semantic] (http://semantic-ui.com/)
+2. [Semantic-React] (http://react.semantic-ui.com/)
