@@ -1,12 +1,18 @@
 .gnb {
   position: relative;
-  padding: 200px 50px;
+  padding: 100px 50px;
+  
+  background: $main-color;
+  //background-image: url('/img/gnb2.jpg');
+  background-size: cover;
 
-  background: red;
+  * {
+    color: white;
+  }
 
   .menu-list {
     position: absolute;
-    top: 0px;
+    top: 20px;
     right: 0px;
 
     ul {
@@ -21,6 +27,9 @@
       }
       li {
         display: inline;
+        padding-right: 20px;
+
+        font-size: 18px;
         list-style: none;
       }
     }
@@ -29,6 +38,13 @@
 
   .title {
     margin: 0;
+    font-size: 44px;
+    //color: white;
+    //color: $main-color;
+  }
+  .sub-title {
+    margin-top: 10px;
+    font-size: 18px;
   }
 
 }

@@ -3,5 +3,8 @@
 * Email: nayunhwan.dev@mgail.com
 */
 
-/* Default Page */
+/* Global Navigation Bar Component */
 export GNB from './GNB/GNB';
+
+/* Footer Component */
+export Footer from './Footer/Footer';
