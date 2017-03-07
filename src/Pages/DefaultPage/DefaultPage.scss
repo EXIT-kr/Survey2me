@@ -1,8 +1,20 @@
-body {
-  margin: 0 auto;
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('/public/fonts/NanumSquareRegular.ttf') format('truetype');
 }
 
-.bottom-nav {
-  position: absolute;
-  bottom: 0px;
+* {
+  color: $main-font-color;
 }
+
+body {
+  margin: 0 auto;
+  background: #f5f8fa;
+  font-family: NanumSquare;
+}
+
+.ui.container {
+  padding: 20px;
+
+}
+
