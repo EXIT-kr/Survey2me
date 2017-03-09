@@ -3,7 +3,8 @@
 * Email: nayunhwan.dev@mgail.com
 */
 
-/* Default Page */
 export DefaultPage from './DefaultPage/DefaultPage';
-/* Landing Page */
 export LandingPage from './LandingPage/LandingPage';
+export LoginPage from './LoginPage/LoginPage';
+export ProfilePage from './ProfilePage/ProfilePage';
+export SignUpPage from './SignUpPage/SignUpPage';

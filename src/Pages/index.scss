@@ -3,8 +3,8 @@
 * Email: nayunhwan.dev@mgail.com
 */
 
-// Default Page Scss
 @import "./DefaultPage/DefaultPage";
-
-// Landing Page Scss
 @import "./LandingPage/LandingPage";
+@import './LoginPage/LoginPage';
+@import "./ProfilePage/ProfilePage";
+@import "./SignUpPage/SignUpPage";

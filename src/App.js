@@ -6,7 +6,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 // Own Modules
-import { LandingPage } from './Pages/';
+import { LandingPage, LoginPage, SignUpPage, ProfilePage } from './Pages/';
 
 
 class App extends Component {
@@ -21,6 +21,15 @@ class App extends Component {
         <Router history={browserHistory}>
           <Route path="/">
             <IndexRoute component={LandingPage}/>
+          </Route>
+          <Route path="/login">
+            <IndexRoute component={LoginPage}/>
+          </Route>
+          <Route path="/signup">
+            <IndexRoute component={SignUpPage}/>
+          </Route>
+          <Route path="/profile">
+            <IndexRoute component={ProfilePage}/>
           </Route>
         </Router>
       </MuiThemeProvider>

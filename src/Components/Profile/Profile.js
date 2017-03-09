@@ -12,6 +12,12 @@ import {
   Header,
 } from 'semantic-ui-react'
 
+// Setting for Props
+const defaultProps = {
+  avatar: '',
+  name: '',
+};
+const propTypes = {};
 
 class Profile extends Component {
   constructor(props) {
@@ -19,11 +25,13 @@ class Profile extends Component {
   }
 
   render() {
+    const { name, avatar } = this.props;
+
     return (
       <div>
         <Image floated='left' size='mini' src='http://semantic-ui.com/images/avatar/large/steve.jpg'/>
         <Header style={{padding: '0px', margin: '0px'}}>
-          Steve Sanders
+          {name}
         </Header>
         <Card.Meta>
           Friends of Elliot
@@ -32,5 +40,8 @@ class Profile extends Component {
     );
   }
 }
+
+Profile.defaultProps = defaultProps;
+Profile.propTypes = propTypes;
 
 export default Profile

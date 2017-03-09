@@ -2,7 +2,8 @@
 // If you want to make other page, Copy and Refactor this page.
 
 import React, { Component } from 'react';
-import { GNB, Footer } from "../../Components";
+import { browserHistory } from 'react-router';
+import { GNB, Footer, SurveyItem } from "../../Components";
 import {
   Button,
   Message,
@@ -10,6 +11,7 @@ import {
   Header,
   Icon,
   Image,
+  Input,
   Segment,
   Container
 } from 'semantic-ui-react'
@@ -18,22 +20,31 @@ import {
 class LandingPage extends Component {
   constructor(props) {
     super(props);
+
+    this.moveToUrl = this.moveToUrl.bind(this);
+  }
+
+  moveToUrl(url) {
+    browserHistory.push(url)
   }
 
   render() {
     return (
       <div>
         <GNB/>
+        <div className="search-container">
+          <Input fluid icon="search" placeholder="Search..."/>
+        </div>
         <Container>
           <Message info>
-            <Header as="h2" color="#616FA9">아직 Survey2me 회원이 아니신가요?</Header>
+            <Header as="h2">아직 Survey2me 회원이 아니신가요?</Header>
             <br/>
             Survey2me에 가입하시면 설문 참여 뿐만 아니라, 다양한 설문 조사를 시작할 수 있습니다.
             지금 바로 가입하여 나만의 설문을 시작해보세요.
             <br/>
             <div>
               <br/>
-              <Button basic color='green'>가입하기</Button>
+              <Button basic color='green' onClick={() => this.moveToUrl("/signup")}>가입하기</Button>
             </div>
           </Message>
           <Card.Group>
@@ -78,29 +89,7 @@ class LandingPage extends Component {
               </Card.Content>
             </Card>
           </Card.Group>
-          <Card>
-            <Image src='http://semantic-ui.com/images/avatar2/large/matthew.png'/>
-            <Card.Content>
-              <Card.Header>
-                Matthew
-              </Card.Header>
-              <Card.Meta>
-          <span className='date'>
-            Joined in 2015
-          </span>
-              </Card.Meta>
-              <Card.Description>
-                Matthew is a musician living in Nashville.
-              </Card.Description>
-            </Card.Content>
-            <Card.Content extra>
-              <a>
-                <Icon name='user'/>
-                22 Friends
-              </a>
-            </Card.Content>
-          </Card>
-
+          <SurveyItem name="Hello"/>
         </Container>
         <Footer/>
       </div>

@@ -13,12 +13,12 @@ class Footer extends Component {
     return (
       <div className="footer">
         <Grid columns='equal'>
-          <Grid.Column width={4} mobile={1}>
+          <Grid.Column computer={4}>
           </Grid.Column>
-          <Grid.Column width={2} mobile={12}>
+          <Grid.Column computer={2} mobile={16}>
             <img src="/img/footer-logo.png" width="120px"/>
           </Grid.Column>
-          <Grid.Column mobile={12}>
+          <Grid.Column computer={8} mobile={16}>
             <p>문의하기 | nayunhwan.dev@gmail.com</p>
             <p>Copyrights 2017 EXIT, All rights reserved.<br/>경기도 안산시 상록구 한양대학로 55 한양대학교 ERICA 창업보육센터</p>
           </Grid.Column>
