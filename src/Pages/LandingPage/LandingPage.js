@@ -3,6 +3,7 @@
 
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
+import StackGrid from "react-stack-grid";
 import { GNB, Footer, SurveyItem } from "../../Components";
 import {
   Button,
@@ -47,49 +48,22 @@ class LandingPage extends Component {
               <Button basic color='green' onClick={() => this.moveToUrl("/signup")}>가입하기</Button>
             </div>
           </Message>
-          <Card.Group>
-            <Card>
-              <Card.Content>
-                <Image floated='right' size='mini' src='http://semantic-ui.com/images/avatar/large/steve.jpg'/>
-                <Card.Header>
-                  Steve Sanders
-                </Card.Header>
-                <Card.Meta>
-                  Friends of Elliot
-                </Card.Meta>
-                <Card.Description>
-                  Steve wants to add you to the group <strong>best friends</strong>
-                </Card.Description>
-              </Card.Content>
-              <Card.Content extra>
-                <div className='ui two buttons'>
-                  <Button basic color='green'>Approve</Button>
-                  <Button basic color='red'>Decline</Button>
-                </div>
-              </Card.Content>
-            </Card>
-            <Card>
-              <Card.Content>
-                <Image floated='right' size='mini' src='http://semantic-ui.com/images/avatar/large/steve.jpg'/>
-                <Card.Header>
-                  Steve Sanders
-                </Card.Header>
-                <Card.Meta>
-                  Friends of Elliot
-                </Card.Meta>
-                <Card.Description>
-                  Steve wants to add you to the group <strong>best friends</strong>
-                </Card.Description>
-              </Card.Content>
-              <Card.Content extra>
-                <div className='ui two buttons'>
-                  <Button basic color='green'>Approve</Button>
-                  <Button basic color='red'>Decline</Button>
-                </div>
-              </Card.Content>
-            </Card>
-          </Card.Group>
-          <SurveyItem name="Hello"/>
+          <StackGrid
+            columnWidth={250}
+            gutterWidth={20}
+            gutterHeight={20}
+          >
+            <SurveyItem name="Hello"/>
+            <SurveyItem name="Hello"/>
+            <SurveyItem name="Hello" image="http://semantic-ui.com/images/avatar/large/elliot.jpg"/>
+            <SurveyItem name="Hello"/>
+            <SurveyItem name="Hello" image="https://pbs.twimg.com/media/C6UcYacVUAEikDF.jpg"/>
+            <SurveyItem name="Hello" image="https://pbs.twimg.com/media/C6ZgiX2XMAMrakf.jpg"/>
+            <SurveyItem name="Hello"/>
+            <SurveyItem name="Hello"/>
+            <SurveyItem name="Hello"/>
+          </StackGrid>
+
         </Container>
         <Footer/>
       </div>

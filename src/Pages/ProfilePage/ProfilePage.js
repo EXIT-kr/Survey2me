@@ -3,7 +3,7 @@
 
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
-import { GNB, Footer, SurveyItem } from "../../Components";
+import { GNB, Footer, SurveyItem, UrlLink } from "../../Components";
 import {
   Button,
   Message,
@@ -15,8 +15,13 @@ import {
   Segment,
   Container,
   Grid,
+  Statistic,
 } from 'semantic-ui-react'
 
+const items = [
+  { label: '설문', value: '22' },
+  { label: '참여', value: '1,232' },
+];
 
 class ProfilePage extends Component {
   constructor(props) {
@@ -46,8 +51,12 @@ class ProfilePage extends Component {
                   @Username
                 </Header.Subheader>
               </Header>
+
               <p className="bio">Here is Bio Section</p>
-              <Icon name="linkify"/>
+              <UrlLink text="http://localhost"/>
+            </Grid.Column>
+            <Grid.Column computer={5}>
+              <Statistic.Group items={items} color='blue' />
             </Grid.Column>
           </Grid>
         </div>

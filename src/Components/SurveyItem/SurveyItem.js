@@ -28,8 +28,8 @@ class SurveyItem extends Component {
   render() {
     const { image, name } = this.props;
     return (
-      <Card>
-        {image != ''? <Image src='http://semantic-ui.com/images/avatar2/large/matthew.png'/> : null}
+      <Card className="survey-item">
+        {image != ''? <Image src={image}/> : null}
         <Card.Content>
           <Profile name={name}/>
           <Card.Meta>
