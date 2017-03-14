@@ -65,7 +65,6 @@ class ProfilePage extends Component {
         </Container>
         <Footer/>
       </div>
-
     );
   }
 }
